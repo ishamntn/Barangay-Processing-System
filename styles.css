@@ -125,6 +125,11 @@ body {
   background-color: #2a097d;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 /* Cards Slider */
 .cards-slider {
   flex: 1;
