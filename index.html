@@ -27,6 +27,12 @@
       </div>
     </nav>
   </header>
+  <script>
+    function toggleAnswer(event) {
+        const answer = event.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    }
+</script>
 
   <!-- Hero Section -->
   <section id="home" class="hero">
@@ -66,14 +72,70 @@
 
   <!-- Contact Us Section -->
   <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <p>Lorem ipsum praesent ac massa at ligula.</p>
+    <div class="contact-header">
+      <h2>Contact Us</h2>
+      <p>Have any questions or need assistance? Feel free to reach out to us.</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-form">
+        <form action="submit_contact_form.php" method="post">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-info">
+        <h3>Reach Us At</h3>
+        <p><strong>Email:</strong> support@barangaypermit.com</p>
+        <p><strong>Phone:</strong> +63 912 345 6789</p>
+        <p><strong>Address:</strong> Barangay Office, Street Name, City, Province</p>
+        <p><strong>Operating Hours:</strong> Mon-Fri, 9:00 AM - 5:00 PM</p>
+      </div>
+    </div>
   </section>
+  
 
   <!-- FAQ Section -->
   <section id="faq" class="faq">
-    <h2>FAQ</h2>
-    <p>Lorem ipsum praesent ac massa at ligula.</p>
+    <div class: body1>
+    <div class="faq-container">
+      <h2>Frequently Asked Questions</h2>
+      
+      <div class="faq-item">10:55 AM 11/21/2024
+          <div class="faq-question" onclick="toggleAnswer(this)">What is a barangay permit?</div>
+          <div class="faq-answer">A barangay permit is an official document issued by the local barangay government that allows individuals or businesses to operate legally in a specific area.</div>
+      </div>
+      
+      <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">How do I apply for a barangay permit?</div>
+          <div class="faq-answer">You can apply for a barangay permit here by click on the "APPLY NOW" button at the home page.</div>
+      </div>
+  
+      <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">What documents are required for the application?</div>
+          <div class="faq-answer">Take a picture of your valid ID, and any other documents specific to your type of business or activity.</div>
+      </div>
+  
+      <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">How long does it take to process the application?</div>
+          <div class="faq-answer">Processing times can vary, but it usually takes a few days to a couple of weeks, depending on the barangay's workload.</div>
+      </div>
+      <div class="faq-item">
+          <div class="faq-question" onclick="toggleAnswer(this)">Lorem ipsum</div>
+          <div class="faq-answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+      </div>
+  </div>
+  </div>
   </section>
 </body>
 </html>

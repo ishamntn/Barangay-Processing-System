@@ -26,12 +26,11 @@
     <h1>Renew Your Barangay Permit</h1>
     <p>For returning users, please provide your Reference Number to load your details.</p>
     <form action="update-details.html" method="POST" class="permit-form">
-      <!-- Pre-filled Information Section -->
       <label for="ref-number">Reference Number: <span class="req">*</span></label>
       <input type="text" id="ref-number" name="ref-number" placeholder="Enter your reference number" required>
       <button type="button" class="btn-primary" onclick="loadUserDetails()">Load Details</button>
 
-      <!-- Form Fields -->
+    
       <label for="name">Full Name: <span class="req">*</span></label>
       <input type="text" id="name" name="name" placeholder="Enter your full name">
 
@@ -51,28 +50,54 @@
       <label for="requirements">Upload Updated Requirements (if needed):</label>
       <input type="file" id="requirements" name="requirements">
 
-      <!-- Submit Button -->
       <button type="submit" class="btn-primary">Submit Updated Application</button>
     </form>
   </section>
 
   <script>
-    // JavaScript to simulate loading pre-filled information
     function loadUserDetails() {
-      // Simulate fetching user data from the backend
       const userData = {
         name: "Juan Dela Cruz",
         address: "123 Barangay St.",
         contact: "09123456789",
         permitType: "business-permit",
       };
-
-      // Populate the form with the fetched data
       document.getElementById('name').value = userData.name;
       document.getElementById('address').value = userData.address;
       document.getElementById('contact').value = userData.contact;
       document.getElementById('permit-type').value = userData.permitType;
     }
   </script>
+
+  <section class="apply-now">
+    <h1>Payment Method</h1>
+    <p>Please complete the payment to process your permit renewal.</p>
+    <form action="payment-success.html" method="POST" class="permit-form"><br>
+      <label for="payment-method">Choose a Payment Method: <span class="req">*</span></label>
+      <select id="payment-method" name="payment-method" required>
+        <option value="credit-card">Credit/Debit Card</option>
+        <option value="gcash">Gcash</option>
+        <option value="paymaya">PayMaya</option>
+        <option value="bank-transfer">Bank Transfer</option>
+      </select>
+
+
+      <div id="card-details" class="payment-details">
+        <label for="card-number">Card Number: <span class="req">*</span></label>
+        <input type="text" id="card-number" name="card-number" placeholder="Enter your card number">
+
+        <label for="card-name">Cardholder Name: <span class="req">*</span></label>
+        <input type="text" id="card-name" name="card-name" placeholder="Enter name on card">
+
+        <label for="expiry-date">Expiry Date: <span class="req">*</span></label>
+        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+
+        <label for="cvv">CVV: <span class="req">*</span></label>
+        <input type="text" id="cvv" name="cvv" placeholder="Enter CVV">
+      </div>
+
+      <button type="submit" class="btn-primary"><a href="processing" class="payment">Confirm Payment</a></button>
+    </form>
+  </section>
 </body>
 </html>
