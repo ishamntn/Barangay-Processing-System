@@ -72,6 +72,7 @@
   .login-btn {
     padding: 5px 15px;
     background-color: #2a097d;
+    font-size: 16px;
     border: none;
     color: white;
     border-radius: 5px;
@@ -80,7 +81,23 @@
   }
   
   .login-btn:hover {
+    color: #7695eb;
+    background-color: #130142;
+  }
+
+  .btn-primary {
+    padding: 5px 15px;
     background-color: #2a097d;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    color: #7695eb;
+    background-color: #130142;
   }
   
 .apply-now, .login-section {
@@ -110,6 +127,10 @@
     font-weight: bold;
     text-align: left;
     color: white;
+  }
+
+  span.req {
+    color: red;
   }
   
   input, select {

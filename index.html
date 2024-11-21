@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Barangay Permit System</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -22,7 +23,7 @@
       </ul>
       <div class="login-bar">
         <input type="text" placeholder="Search..." class="search-bar">
-        <button class="login-btn"><a href="login.html">Log In</a></button>
+        <button class="login-btn" onclick="document.location='login.html'">Log In</button>
       </div>
     </nav>
   </header>
@@ -32,11 +33,12 @@
     <div class="hero-content">
       <h1>BARANGAY <br><span>PERMIT SYSTEM</span></h1>
       <p>Efficient, transparent, and accessible permit processing for your barangay needs.<br> Apply, track, and manage permits easily.</p>
-      <button class="btn-primary"><a href="apply.html">APPLY NOW</a> </button>
+      <button class="btn-primary" onclick="document.location='apply.html'">APPLY NOW</button>
+      <button class="btn-primary" onclick="document.location='renew.html'">RENEW NOW</button>
     </div>
     <div class="cards-slider">
       <div class="card">
-        <img src="Business.jpg" alt="Business Permit">
+        <img src="business.jpg" alt="Business Permit">
         <h3>Business Permit</h3>
         <p>Lorem ipsum praesent ac massa at ligula.</p>
         <button>Learn More</button>
