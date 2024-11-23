@@ -104,57 +104,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-label {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: left;
-  color: white;
-}
-
-span.req {
-  color: red;
-}
-
-input, select {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  width: 100%;
-}
-
-input[type="file"] {
-  background-color: white;
-  color: black;
-  cursor: pointer;
-}
-
-button {
-  align-self: center;
-  width: 50%;
-  background-color: #2a097d;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-}
-
-.payment-details {
-  display: none;
-}
-
-.payment {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-/* Status Tracker */
 .status-tracker {
   margin: 20px auto;
   text-align: center;
@@ -179,17 +128,6 @@ button {
   color: white;
 }
 
-.status-list li::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -50%;
-  height: 4px;
-  width: 100%;
-  background-color: white;
-  transform: translateY(-50%);
-  z-index: -1;
-}
 
 .status-list li:last-child::after {
   display: none;
