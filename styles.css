@@ -529,3 +529,20 @@ footer{
   position: absolute;
   left: 0;
 }
+
+.Feedback{
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.Feedback-item{
+ text-align: center;
+ height: 150px;
+width: 700px;
+  font-size:14px;
+  text-align: left;
+}
+      @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+      }
