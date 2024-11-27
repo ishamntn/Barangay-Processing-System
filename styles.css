@@ -291,6 +291,7 @@ h2 {
 
 .contact-form {
   flex: 1;
+  height: 444px;
 }
 
 .contact-info {
@@ -298,7 +299,7 @@ h2 {
 }
 
 .contact-form .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   text-align: left;
 }
 
@@ -566,9 +567,7 @@ footer{
  width: 730px;
  font-size:14px;
  text-align: left;
+ padding-left: 10px;
+ padding-top: 10px;
 
 }
-      @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-      }
